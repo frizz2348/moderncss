@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
 
+
+
+$light-green: #7ed56f;
+$medium-green: #55c57a;
+$dark-green: #28b485;
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +13,52 @@
 }
 
 body {
-    text-transform: uppercase;
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 20px;
 }
 
-$light-green: #7ed56f;
-$medium-green: #55c57a;
-$dark-green: #28b485;
+.header {
+    height: 95vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(23, 201, 103, 0.61), rgba(37, 163, 94, 0.61)), url('./images/headerBG.jpg') bottom ;
+    background-size: cover;
+    clip-path: polygon(0% 0%,100% 0%, 100% 75%, 0% 100%);
+    .logo img{
+        width: 70px;
+        position: relative;
+        top: 40px;
+        left: 40px;
+        filter: invert(1);
+    }
+    &-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1 {
+            text-transform: uppercase;
+            color: white;
+            .hmain {
+                font-size: 1.4em;
+                letter-spacing: 25px;
+                font-weight: 700;
+            }
+            .hsec {
+                font-size: .57em;
+                word-spacing: 5px;
+                letter-spacing: 10px;
+                font-weight: 300;
+            }
+        }
+        span {
+            display: block;
+        }
+
+    }
+}
+
 
