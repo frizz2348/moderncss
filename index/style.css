@@ -14,34 +14,35 @@ body {
 
 .header {
   height: 95vh;
-  width: 100%;
-  background: linear-gradient(to right, rgba(23, 201, 103, 0.61), rgba(37, 163, 94, 0.61)), url("./images/headerBG.jpg") bottom;
+  background: linear-gradient(to right, rgba(23, 201, 103, 0.801), rgba(37, 163, 94, 0.61)), url("./images/headerBG.jpg") bottom;
   background-size: cover;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%); }
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+  position: relative; }
   .header .logo img {
-    width: 70px;
-    position: relative;
+    height: 50px;
+    position: absolute;
     top: 40px;
     left: 40px;
     filter: invert(1); }
-  .header-box {
+  .header .text-box {
+    background-color: black;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
-    .header-box h1 {
-      text-transform: uppercase;
-      color: white; }
-      .header-box h1 .hmain {
-        font-size: 1.4em;
-        letter-spacing: 25px;
-        font-weight: 700; }
-      .header-box h1 .hsec {
-        font-size: .57em;
-        word-spacing: 5px;
-        letter-spacing: 10px;
-        font-weight: 300; }
-    .header-box span {
-      display: block; }
+  .header-box h1 {
+    text-transform: uppercase;
+    color: white; }
+    .header-box h1 .hmain {
+      font-size: 1.4em;
+      letter-spacing: 25px;
+      font-weight: 700; }
+    .header-box h1 .hsec {
+      font-size: .57em;
+      word-spacing: 5px;
+      letter-spacing: 10px;
+      font-weight: 400; }
+  .header-box span {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */
