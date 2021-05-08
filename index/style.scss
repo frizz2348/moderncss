@@ -37,7 +37,7 @@ body {
     }
 
     .text-box  {
-        background-color: black;
+        // background-color: black;
         position: absolute;
         top: 40%;
         left: 50%;
@@ -52,12 +52,18 @@ body {
                 font-size: 1.4em;
                 letter-spacing: 25px;
                 font-weight: 700;
+                animation: animate1 2.5s;
+                animation-delay: .4s;
+                animation-timing-function: ease-in;
             }
             .hsec {
                 font-size: .57em;
                 word-spacing: 5px;
                 letter-spacing: 10px;
                 font-weight: 400;
+                animation: animate2 2.5s;
+                animation-delay: .4s;
+                animation-timing-function: ease-in;
             }
         }
         span {
@@ -66,4 +72,28 @@ body {
 
     }
 
+}
+
+@keyframes animate1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(10px);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-10px);
+    }
 }
