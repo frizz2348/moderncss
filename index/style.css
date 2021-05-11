@@ -41,7 +41,7 @@ body {
       font-weight: 700;
       animation: animate1 1s;
       animation-delay: .25s;
-      animation-timing-function: ease-in-out; }
+      animation-timing-function: ease-in; }
     .header-box h1 .hsec {
       font-size: .57em;
       word-spacing: 5px;
@@ -49,7 +49,7 @@ body {
       font-weight: 400;
       animation: animate2 1s;
       animation-delay: .25s;
-      animation-timing-function: ease-in-out; }
+      animation-timing-function: ease-in; }
   .header-box span {
     display: block; }
 
@@ -119,5 +119,11 @@ body {
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.5);
   opacity: 0; }
+
+title {
+  background-color: red; }
+
+head {
+  border-color: blue; }
 
 /*# sourceMappingURL=style.css.map */
