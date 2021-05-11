@@ -174,3 +174,9 @@ title {
 head {
     border-color: blue;
 }
+
+.second {
+    clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
+    background: linear-gradient(to right, rgba(55, 57, 163, 0.8), rgba(14, 36, 77, 0.8)), url('./images/pexels-inge-wallumrød-223022.jpg') bottom ;
+    margin-top: -100px;
+}
