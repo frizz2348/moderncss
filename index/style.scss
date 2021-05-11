@@ -180,3 +180,34 @@ head {
     background: linear-gradient(to right, rgba(55, 57, 163, 0.8), rgba(14, 36, 77, 0.8)), url('./images/pexels-inge-wallumrød-223022.jpg') bottom ;
     margin-top: -100px;
 }
+
+@media screen and (max-width: 700px) {
+    body {
+        background-color: black;
+    }
+
+    .header-box {
+        h1 {
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 20px;
+            .hmain {
+                font-size: .9em;
+                letter-spacing: 20px;
+            }
+            .hsec {
+                font-size: .32em;
+                word-spacing: 7px;
+                letter-spacing: 7.5px;
+            }
+        }  
+    }
+
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px 15px;
+        font-size: .70em;
+    }
+}
